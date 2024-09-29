@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Zichen Gui"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : # "Assistant Professor at UGA. Interested in applied cryptography."
   location         : "Athens, Georgia, USA"
   employer         : "University of Georgia"
   uri              : # URL
