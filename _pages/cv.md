@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-You can find my CV [here](https://github.com/Zichen-Gui/Zichen-Gui.github.io/blob/4dad73bab8a6deed5ba1c057636ca30657d55ed1/files/CV.pdf).
+You can find my CV [here](https://Zichen-Gui.github.io/files/CV.pdf).
