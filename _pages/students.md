@@ -6,6 +6,9 @@ author_profile: true
 ---
 
 ## Current PhD Students
-- Abdoul-Nourou Yigo: https://www.linkedin.com/in/abdoulnourouyigo
-- Tarun Sai Damarla: https://www.linkedin.com/in/damarla-tarun-sai 
+- [Abdoul-Nourou Yigo](https://www.linkedin.com/in/abdoulnourouyigo)
+- [Tarun Sai Damarla](https://www.linkedin.com/in/damarla-tarun-sai)
+
+## Current Master's Students
+- [Sriaditya Vedantam](https://zyphensvc.com/)
 
