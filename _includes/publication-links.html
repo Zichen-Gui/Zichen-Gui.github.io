@@ -1,0 +1,19 @@
+{% comment %}
+  Renders a "Paper | Slides | Artifact | Talk" link row for a publication.
+  Usage: include publication-links.html item=post (optionally style="...")
+  Only links whose front matter field is set are shown.
+{% endcomment %}
+{% assign item = include.item %}
+{% capture links %}
+  {% if item.paperurl %}<a href="{{ item.paperurl }}">Paper</a>|{% endif %}
+  {% if item.slidesurl %}<a href="{{ item.slidesurl }}">Slides</a>|{% endif %}
+  {% if item.artifacturl %}<a href="{{ item.artifacturl }}">Artifact</a>|{% endif %}
+  {% if item.talkurl %}<a href="{{ item.talkurl }}">Talk</a>|{% endif %}
+{% endcapture %}
+{% assign links = links | strip | split: "|" %}
+{% if item.citation or links.size > 0 %}
+  <p{% if include.style %} style="{{ include.style }}"{% endif %}>
+    {% if item.citation %}Recommended citation: {{ item.citation }}{% if links.size > 0 %}<br />{% endif %}{% endif %}
+    {% for link in links %}{% assign link = link | strip %}{% if link != "" %}{% unless forloop.first %} | {% endunless %}{{ link }}{% endif %}{% endfor %}
+  </p>
+{% endif %}
