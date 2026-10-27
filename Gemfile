@@ -9,3 +9,7 @@ group :jekyll_plugins do
 end
 
 gem 'github-pages'
+
+# Needed only for local previews on Windows (no system timezone database; faster file watching)
+gem 'tzinfo-data', platforms: [:windows]
+gem 'wdm', '>= 0.1.0', platforms: [:windows]
