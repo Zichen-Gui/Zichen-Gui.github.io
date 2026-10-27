@@ -116,7 +116,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -169,6 +169,7 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
+  - CONTRIBUTING.md
   - Dockerfile
   - Gemfile
   - Gruntfile.js
@@ -176,10 +177,13 @@ exclude:
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
   - README
+  - talkmap.ipynb
+  - talkmap.py
   - tmp
   - vendor
 keep_files:
